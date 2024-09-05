@@ -1,0 +1,5 @@
+docker start -i c9952e76f902
+apt install -y nodejs
+node /usr/src/app/index.js
+Hello World
+exit
