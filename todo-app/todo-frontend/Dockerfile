@@ -1,6 +1,5 @@
 FROM node:lts-bookworm-slim AS build
-# ENV NODE_ENV=production
-ENV VITE_BACKEND_URL=http://localhost:3000
+ENV VITE_BACKEND_URL=/api
 WORKDIR /usr/src/app
 COPY . .
 RUN npm ci --include=dev
